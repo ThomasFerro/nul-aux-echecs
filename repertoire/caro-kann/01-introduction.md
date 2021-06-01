@@ -1,5 +1,7 @@
 # 1. e4 c6 - Caro-Kann
 
+<chess-board data-position="e2-e4, c7-c6">
+
 TODOs:
 - [ ] 3. exd5 + toutes les variantes
 - [ ] 3. Cc3 + toutes les variantes
@@ -17,6 +19,8 @@ Inconvénients:
 - Jeu moins compliqué
 
 ## 2. d4 d5
+
+<chess-board data-position="e2-e4, c7-c6, d2-d4, d7-d5">
 
 Deuxièmes coups les plus joués sur mes parties et sur Chess.com.
 
