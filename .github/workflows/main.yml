@@ -18,6 +18,7 @@ jobs:
           dist_path: /github/workspace/dist
           blog_title: Nul aux échecs
           post_page_template_path: /github/workspace/postPageTemplate.go.html
+          home_page_template_path: /github/workspace/homePageTemplate.go.html
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
