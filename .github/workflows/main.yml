@@ -1,0 +1,25 @@
+name: Build site
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: ThomasFerro/golb@v0.1.0
+        with:
+          posts_path: /github/workspace/repertoire
+          dist_path: /github/workspace/dist
+          blog_title: Nul aux échecs
+          post_page_template_path: /github/workspace/postPageTemplate.go.html
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
