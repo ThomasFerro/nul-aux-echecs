@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{.Locale}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.PageTitle}}</title>
+    <!-- TODO: Replace with local file -->
+    <script type="module" src="https://unpkg.com/chessboard-element?module"></script>
+    <script>
+        const setupBoards = () => {
+            const setupBoardPosition = (board) => {
+                board.start()
+                const moves = board.dataset.position.split(", ")
+                console.log(moves)
+                board.move(...moves)
+            }
+            document.onreadystatechange = () => {
+                if (document.readyState === 'complete') {
+                    [...document.getElementsByTagName("chess-board")].forEach(setupBoardPosition)
+                }
+            };
+        }
+        setupBoards()
+    </script>
+</head>
+<body>
+    <main>{{.Content}}</main>
+    <footer>© Thomas Ferro - 2021</footer>
+</body>
+</html>
