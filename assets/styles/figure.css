@@ -1,0 +1,12 @@
+figure>img {
+    max-width: 100%;
+}
+
+figcaption {
+    --font-color: var(--main-color);
+
+    color: var(--font-color);
+    font-family: var(--title-font-family);
+    font-weight: bold;
+    padding: var(--spacing-sm);
+}

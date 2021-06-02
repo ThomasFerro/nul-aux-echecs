@@ -1,0 +1,26 @@
+h1, h2, h3, h4, h5, h6, h7 {
+    --title-width: 85%;
+    --title-arrow-width: calc(100% - 20px);
+}
+
+h1 {
+    --font-color: var(--main-color);
+
+    color: var(--font-color);
+    align-self: center;
+}
+
+h2 {
+    --background-color: var(--main-color);
+    --font-color: var(--main-font-color);
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+    padding: var(--spacing-lg);
+    width: var(--title-width);
+    clip-path: polygon(0% 0%, var(--title-arrow-width) 0, 100% 50%, var(--title-arrow-width) 100%, 0% 100%);
+}
+
+h2 a {
+    --link-color: var(--main-font-color);
+}

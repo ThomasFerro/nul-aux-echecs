@@ -1,0 +1,40 @@
+:root {
+    --main-color: #10689b;
+    --main-font-color: white;
+    --main-color-lighten: #6fb2da;
+
+    --spacing-sm: 5px;
+    --spacing-md: 10px;
+    --spacing-lg: 20px;
+
+    --font-size: 16px;
+    --font-color: #111;
+
+    --max-body-width: 40rem;
+}
+
+body {
+    max-width: var(--max-body-width);
+    margin: var(--spacing-md) auto;
+}
+
+p {
+    margin: 1.25em;
+}
+
+a {
+    --link-color: var(--main-color);
+    color: var(--link-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+header .icon {
+    height: 1.3em;
+}
