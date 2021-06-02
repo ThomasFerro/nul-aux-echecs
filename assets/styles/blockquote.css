@@ -1,0 +1,16 @@
+blockquote {
+    --background-color: var(--main-color);
+    --border-color: var(--main-color-lighten);
+    --font-color: var(--main-font-color);
+
+    background-color: var(--background-color);
+    border-left: var(--spacing-md) solid var(--border-color);
+    padding: var(--spacing-sm);
+
+    font-style: italic;
+    color: var(--font-color);
+}
+
+blockquote a {
+    --link-color: var(--main-font-color);
+}

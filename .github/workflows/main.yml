@@ -17,6 +17,7 @@ jobs:
           posts_path: /github/workspace/repertoire
           dist_path: /github/workspace/dist
           blog_title: Nul aux échecs
+          global_assets_path: /github/workspace/assets
           post_page_template_path: /github/workspace/postPageTemplate.go.html
           home_page_template_path: /github/workspace/homePageTemplate.go.html
       - name: Deploy to Github Pages
